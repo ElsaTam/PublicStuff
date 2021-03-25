@@ -1,0 +1,120 @@
+.organigram *{
+	box-sizing: border-box;
+	position: relative;
+}
+
+.organigram ul {
+	padding: 0;
+	margin: 0;
+	list-style: none;		
+}
+
+.organigram ul a {
+	display: block;
+	background: #ccc;
+	border: 4px solid #fff;
+	text-align: center;
+	overflow: hidden;
+	font-size: .7em;
+	text-decoration: none;
+	font-weight: bold;
+	color: #333;
+	height: 70px;
+	box-shadow: 4px 4px 9px -4px rgba(0,0,0,0.4);
+	transition: all linear .1s;
+}
+
+.organigram ul a span {
+	top: 50%;
+	margin-top: -0.7em;
+	display: block;
+}
+
+.organigram .direction > li:first-child {
+    width: 50%;
+    margin: 0 auto;
+}
+
+.organigram .direction > li:first-child:after {
+	content: "";
+	display: block;
+	position: absolute;
+	width: 81.1%;
+	height: 35px;
+	border-left: 4px solid #fff;
+	bottom: -35px;
+	left: 50%
+}
+
+.organigram .departments {
+	position: absolute;
+	width: 100%;
+    top: 75px;
+}
+
+.organigram .departments:after {
+	content: "";
+	display: block;
+	position: absolute;
+	top: -40px;
+	left: 10%;
+	width: 80%;
+	height: 40px;	
+	border-top: 4px solid #fff;
+	border-right: 4px solid #fff;
+	border-left: 4px solid #fff;
+}
+
+.organigram .departments li:first-child {
+	margin-left: 0;
+	clear: left;	
+}
+
+.organigram .department {
+	border-left: 4px solid #fff;
+	width: 18.59894921190893%;
+	float: left;
+	margin-left: 1.751313485113835%;
+	margin-bottom: 60px;
+}
+
+.organigram .department > a:hover {	
+	height: 80px;
+}
+
+.organigram .department > a {
+	margin: 0 0 -26px -4px;
+	z-index: 1;
+}
+
+.organigram .department > ul {
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+
+.organigram .department li {
+	border-bottom: 4px solid #fff;
+	height: 80px;	
+}
+
+.organigram .department li a {
+	top: 48px;
+	position: absolute;
+	z-index: 1;
+	width: 90%;
+	height: 60px;
+	right: -1px;
+}
+
+.organigram .department li a:hover {
+	box-shadow: 8px 8px 9px -4px rgba(0,0,0,0.1);
+	height: 80px;
+	width: 95%;
+	top: 39px;
+}
+
+.organigram .department.dep-a a { background: #FFD600; }
+.organigram .department.dep-b a { background: #AAD4E7; }
+.organigram .department.dep-c a { background: #FDB0FD; }
+.organigram .department.dep-d a { background: #A3A2A2; }
+.organigram .department.dep-e a { background: #f0f0f0; }
